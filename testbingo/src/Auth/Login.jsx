@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { useAuth } from "../AuthContext.jsx";
+import { useAuth } from "./AuthContext.jsx";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {

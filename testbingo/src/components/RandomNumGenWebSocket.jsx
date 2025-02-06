@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import useWebSocket from "react-use-websocket";
-import {useAuth} from "../AuthContext.jsx";
+import {useAuth} from "../Auth/AuthContext.jsx";
 
 export default function RandomNumbersWebSocket() {
     const [count, setCount] = useState(1);

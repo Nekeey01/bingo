@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import axios from "axios";
-import {useAuth} from "../AuthContext.jsx";
+import {useAuth} from "../Auth/AuthContext.jsx";
 
 export default function RandomNumGenerator() {
     const [count, setCount] = useState(1);

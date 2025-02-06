@@ -3,7 +3,7 @@ import Home from "./components/Home";
 import RandomNumGenerator from './components/RandomNumGenAxios.jsx'
 import RandomNumbersWebSocket from "./components/RandomNumGenWebSocket";
 import './App.css'
-import {AuthProvider, useAuth} from "./AuthContext.jsx";
+import {AuthProvider, useAuth} from "./Auth/AuthContext.jsx";
 import Login from "./Auth/Login.jsx";
 import Register from "./Auth/Register.jsx";
 import {useState} from "react";
