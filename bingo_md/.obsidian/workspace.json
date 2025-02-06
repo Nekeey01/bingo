@@ -1,0 +1,218 @@
+{
+  "main": {
+    "id": "6c660a6410f7f30d",
+    "type": "split",
+    "children": [
+      {
+        "id": "b3672c2064a3741e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e22612e7f8727900",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Общее описание проекта.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Общее описание проекта"
+            }
+          }
+        ]
+      },
+      {
+        "id": "04dc4273b832f4f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "965bedb54ad3cfc0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "БД.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "БД"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a6425b4836c9f97f",
+    "type": "split",
+    "children": [
+      {
+        "id": "fbc1fa1c18ca67d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b7940510019984b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "4d7870df38b572da",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "264e91bc3c47fd7d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4f8a274abaad2986",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c75fc78eb58fbbe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7be2240b825b359f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Добро пожаловать.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для Добро пожаловать"
+            }
+          },
+          {
+            "id": "9dd737c17fcfcc56",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Добро пожаловать.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Добро пожаловать"
+            }
+          },
+          {
+            "id": "1d2e79a5d8c14051",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "f179c7249a750116",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Общее описание проекта.md"
+              },
+              "icon": "lucide-list",
+              "title": "Структура Общее описание проекта"
+            }
+          },
+          {
+            "id": "4cfc059a021d1a8b",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {},
+              "icon": "ag-node-list",
+              "title": "Juggl nodes"
+            }
+          },
+          {
+            "id": "e17412c9095501be",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {},
+              "icon": "ag-style",
+              "title": "Juggl style"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "juggl:Juggl global graph": false,
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
+    }
+  },
+  "active": "e22612e7f8727900",
+  "lastOpenFiles": [
+    "БД.md",
+    "Общее описание проекта.md",
+    "text-generator.json",
+    "community-plugins.json",
+    "command-palette.json",
+    "Добро пожаловать.md"
+  ]
+}

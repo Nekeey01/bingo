@@ -1,0 +1,17 @@
+{
+  "palette": {
+    "seed": 0,
+    "selected": "adaptive-bright",
+    "custom": "e12729-f37324-f8cc1b-72b043-007f4e"
+  },
+  "mixColors": true,
+  "transition": true,
+  "accessibility": {
+    "highTextContrast": true
+  },
+  "knownTags": {
+    "Запрещенное": 1,
+    "Дом_Алдара": 2
+  },
+  "_version": 3
+}
