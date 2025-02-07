@@ -12,7 +12,7 @@ from pydantic import BaseModel
 from sqlalchemy.future import select
 
 from database.database import get_db
-from database.models import User, UserCreate, Token
+from database.models import User, UserCreate, UserAuth, Token
 
 load_dotenv()
 
@@ -68,11 +68,16 @@ async def register(user: UserCreate, db: AsyncSession = Depends(get_db)):
 
 
 @auth_router.post("/login", response_model=Token)
-async def login(user: UserCreate, db: AsyncSession = Depends(get_db)):
+async def login(user: UserAuth, db: AsyncSession = Depends(get_db)):
     db_user = await authenticate_user(db, user.username, user.password)
     if not db_user:
         raise HTTPException(status_code=401, detail="Invalid credentials")
 
+    token_expire_delta = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    if user.remember:
+        token_expire_delta = timedelta(hours=500)
+
+
     token = create_access_token(data={"sub": db_user.username},
-                                expires_delta=timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES))
+                                expires_delta=token_expire_delta)
     return {"access_token": token, "token_type": "bearer"}

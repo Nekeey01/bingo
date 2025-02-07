@@ -9,6 +9,11 @@ from utils.mixin import IDMixin, TimestampsMixin, CreatedAtMixin, UpdatedAtMixin
 class NumberRequest(BaseModel):
     count: int
 
+class UserAuth(BaseModel):
+    username: str
+    password: str
+    remember: bool
+
 class UserCreate(BaseModel):
     username: str
     password: str
@@ -106,7 +111,7 @@ class BingoCell(IDMixin, CreatedAtMixin, Base):
 
     # Relationships
     bingo = relationship("Bingo", back_populates="cells")
-    temp_bingo = relationship("TemporalBingo", back_populates="bingo")
+    temp_bingo = relationship("TemporalBingo", back_populates="cells")
     customization = relationship("CellCustomization", back_populates="cell")
 
 
