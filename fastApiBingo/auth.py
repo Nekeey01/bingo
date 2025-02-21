@@ -69,12 +69,15 @@ async def register(user: UserCreate, db: AsyncSession = Depends(get_db)):
 
 @auth_router.post("/login", response_model=Token)
 async def login(user: UserAuth, db: AsyncSession = Depends(get_db)):
+    print(f"username - {user.username}"
+          f"password - {user.password}"
+          f"remember - {user.remember}")
     db_user = await authenticate_user(db, user.username, user.password)
     if not db_user:
         raise HTTPException(status_code=401, detail="Invalid credentials")
 
     token_expire_delta = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-    if user.remember:
+    if bool(user.remember):
         token_expire_delta = timedelta(hours=500)
 
 
