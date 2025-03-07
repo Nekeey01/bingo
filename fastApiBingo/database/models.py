@@ -10,12 +10,11 @@ class NumberRequest(BaseModel):
     count: int
 
 class UserAuth(BaseModel):
-    username: str
+    email: str
     password: str
-    remember: bool
 
 class UserCreate(BaseModel):
-    username: str
+    email: str
     password: str
 
 class Token(BaseModel):
@@ -29,13 +28,14 @@ class Base(DeclarativeBase):
 
 
 class User(IDMixin, TimestampsMixin, Base):
-    username: Mapped[str] = mapped_column(String(60), unique=True, nullable=False)
+    username: Mapped[str] = mapped_column(String(60), unique=True, nullable=True)
     first_name: Mapped[str] = mapped_column(String(30), nullable=True)
     second_name: Mapped[str] = mapped_column(String(30), nullable=True)
-    hashed_password: Mapped[str] = mapped_column(String(255), nullable=False)
+    hashed_password: Mapped[str] = mapped_column(String(255), nullable=True)
     password_reset_token: Mapped[str] = mapped_column(String(255), nullable=True) ### TODO: Поменять на nullable=False
     email: Mapped[str] = mapped_column(Text, unique=True, nullable=True) ### TODO: Поменять на nullable=False
     avatar_path: Mapped[str] = mapped_column(Text, unique=True, nullable=True) ### TODO: Мб поменять способ хранения все же
+    google_id: Mapped[str] = mapped_column(Text, unique=True, nullable=True)
 
     # Relationships
     bingos = relationship("Bingo", back_populates="user")
